@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/new.css">
+    <link rel="icon" href="images/icon.png">
+    <title>Home for rent</title>
+</head>
+
+<body id="myPage" data-target=".navbar" data-offset="60">
+
+    <!-- Nav menu bar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="new.html">RENT WELL</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="rent.html">RENT</a></li>
+                    <li><a href="sell.html">SELL</a></li>
+                    <li><a href="aboutUs.html">ABOUT</a></li>
+                    <li><a href="contactUs.html">CONTACT</a></li>
+                    <li><a href="notification.html"><span class="glyphicon glyphicon-bell"></span></a></li>
+                    <li class="dropdown-submenu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">
+                            <span class="glyphicon glyphicon-user nav-label"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="#">Setting</a></li>
+                            <li><a href="#">Log Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <ol class="breadcrumb">
+            <li>
+                <a href="new.html">Home</a>
+            </li>
+            <li>
+                <a href="rent.html">Rent</a>
+            </li>
+            <li class="active">Season Drive, Toronto</li>
+        </ol>
+
+        <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="images/inside_home1.jpeg" class="image-gallery-single">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="images/inside_home2.jpg" class="image-gallery-single">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="images/inside_home3.jpg" class="image-gallery-single">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="images/inside_home4.jpg" class="image-gallery-single">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="images/inside_home5.jpg" class="image-gallery-single">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="images/inside_home6.jpeg" class="image-gallery-single">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <div class="row-image-gallery">
+            <div class="column-image-gallery">
+                <img class="demo cursor" src="images/inside_home1.jpeg" onclick="currentSlide(1)">
+            </div>
+            <div class="column-image-gallery">
+                <img class="demo cursor" src="images/inside_home2.jpg" onclick="currentSlide(2)">
+            </div>
+            <div class="column-image-gallery">
+                <img class="demo cursor" src="images/inside_home3.jpg" onclick="currentSlide(3)">
+            </div>
+            <div class="column-image-gallery">
+                <img class="demo cursor" src="images/inside_home4.jpg" onclick="currentSlide(4)">
+            </div>
+            <div class="column-image-gallery">
+                <img class="demo cursor" src="images/inside_home5.jpg" onclick="currentSlide(5)">
+            </div>
+            <div class="column-image-gallery">
+                <img class="demo cursor" src="images/inside_home6.jpeg" onclick="currentSlide(6)">
+            </div>
+        </div>
+
+        <div class="container-fluid shadow-box property-details">
+            <div class="property-location-div">
+                <h2>Basement for rent in Seasons Drive, Toronto</h2>
+                <span class="glyphicon glyphicon-map-marker"></span>
+                <span class="property-location">Toronto, ON M1X 1X4
+                    <a href="https://www.google.com/maps/place/33+Seasons+Dr+e11,+Scarborough,+ON+M1X+1X4/@43.8294821,-79.2339764,17z/data=!3m1!4b1!4m5!3m4!1s0x89d4d73c9b4f5fb1:0xb35a3758215ed1c5!8m2!3d43.8294821!4d-79.2317877"
+                        target="_blank">
+                        (View location)</a>
+                </span>
+                <div class="property-posted-time">Posted a month ago</div>
+            </div>
+            <div class="property-price">
+                <h3>$550</h3>
+            </div>
+        </div>
+
+        <div class="property-text">
+            <div class="property-overview">
+                <div class="heading">Overview</div>
+
+                <div class="subhead-row">
+                    <div class="subheading"> Utilities Included</div>
+                    <div> Not Included</div>
+                </div>
+
+                <div class="subhead-row">
+                    <div class="subheading"> Wi-Fi and More</div>
+                    <div> Internet</div>
+                </div>
+
+                <div class="subhead-row">
+                    <div class="subheading"> Parking Included</div>
+                    <div> 1</div>
+                </div>
+
+                <div class="subhead-row">
+                    <div class="subheading"> Agreement Type</div>
+                    <div> Month-to-month</div>
+                </div>
+
+                <div class="subhead-row">
+                    <div class="subheading"> Move-In Date</div>
+                    <div> March 1, 2022</div>
+                </div>
+
+                <div class="subhead-row">
+                    <div class="subheading"> Pet Friendly</div>
+                    <div> No</div>
+                </div>
+            </div>
+
+            <div class="property-unit">
+                <div class="heading">The Unit</div>
+
+                <div class="subhead-row">
+                    <div class="subheading"> Size(sqft)</div>
+                    <div> 1,000</div>
+                </div>
+
+                <div class="subhead-row">
+                    <div class="subheading"> Furnished</div>
+                    <div> No</div>
+                </div>
+
+                <div class="subhead-row">
+                    <div class="subheading"> Appliances</div>
+                    <div>Laundry</div>
+                </div>
+
+                <div class="subhead-row">
+                    <div class="subheading"> Air Conditioning</div>
+                    <div>Yes</div>
+                </div>
+
+                <div class="subhead-row">
+                    <div class="subheading">Personal Outdoor Space</div>
+                    <div> Yard</div>
+                </div>
+
+                <div class="subhead-row">
+                    <div class="subheading"> Smoking Permitted</div>
+                    <div> No</div>
+                </div>
+            </div>
+            <div class="property-description">
+                <div class="heading">Description</div>
+
+                <div class="property-desc-text">
+                    Gorgeous 4-bedroom, 2-bathroom home in beautiful Silver Lake. This property offers 1,160 square feet
+                    of living space and a lot size of 5,499 square feet. Your family and loved ones will enjoy the
+                    spacious backyard, perfect for family gatherings! Come and take a look at this beauty....Don't miss
+                    out!
+                    <span id="dots">...</span>
+                    <span id="more">
+                        This elegant single family home sits on a tree-lined street in highly desirable North Littleton,
+                        just minutes to Littleton Academy elementary, Heritage High School, downtown Littleton & Denver
+                        center. A private entrance, stone pathway, and thoughtfully landscaped grounds invite you into
+                        the front yard. Upon entrance, you are warmly greeted by slate floors, fresh paint, and a bright
+                        and open floor plan seamlessly connecting the kitchen to the living room and leading to the
+                        inviting, sunny backyard. Meticulous attention to detail is presented in the kitchen with new
+                        quartz countertops, customized backsplash, freshly finished cabinets, and brand-name appliances.
+                        Adjacent to the living room, there’s a comfortable family room and an oversized master bedroom
+                        with a sitting area and bonus room for a walk-in closet, office, or a toddler’s playroom.
+                        Upstairs you’ll find another bathroom, bedroom, and a bonus room/fourth bedroom that provide
+                        additional flexibility. The backyard is full of fruit trees, and a large patio provides
+                        plentiful space for gardening and entertaining.
+                    </span>
+                </div>
+                <button onclick="myFunction()" id="myBtn">Read more</button>
+            </div>
+
+            <div class="owner-info">
+
+                <button type="button" class="btn btn-default">Contact Owner</button>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid text-center  bg-grey">
+        <a href="#myPage" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <p> Humber College Blvd., Toronto, Ontario, Canada M9W 5L7</p>
+        <p> &copy; 2022 All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts/singleproperty.js"></script>
+
+</body>
+
+</html>

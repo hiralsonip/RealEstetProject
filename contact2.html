@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/new.css">
+    <link rel="icon" href="images/icon.png">
+    <title>Rent Well</title>
+</head>
+
+<body id="myPage" data-target=".navbar" data-offset="60">
+
+    <!-- Nav menu bar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="new.html">RENT WELL</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="rent.html">RENT</a></li>
+                    <li><a href="sell.html">SELL</a></li>
+                    <li><a href="aboutUs.html">ABOUT</a></li>
+                    <li class="active"><a href="contactUs.html">CONTACT</a></li>
+                    <li><a href="notification.html"><span class="glyphicon glyphicon-bell"></span></a></li>
+                    <li class="dropdown-submenu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">
+                            <span class="glyphicon glyphicon-user nav-label"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="#">Setting</a></li>
+                            <li><a href="#">Log Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main content - wallpaper -->
+    <div class="jumbotron text-center">
+        <h1>Rent Well</h1>
+        <p>EXCELLENT SPACE FOR YOUR NEXT HOME</p>
+    </div>
+
+    <!-- About Us -->
+    <div class="container-fluid text-center">
+        <h2>Contact Us</h2>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="container-fluid bg-grey" id="contact">
+        <div class="row">
+            <div id="info" class="col-sm-5">
+                <h3><b>Contact Info</b></h3><br>
+                <p>Contact us and we'll get back to you within 24 hours.</p>
+                <p><span class="glyphicon glyphicon-map-marker"></span> 203 Humber College Blvd, Etobicoke, ON M9W 6V3
+                </p>
+                <p><span class="glyphicon glyphicon-phone"></span> +1 4166758500</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> email@something.com</p>
+
+                <!-- <div class="wrapper">
+                    <div class="icon facebook">
+                        <div class="tooltip">Facebook</div>
+                        <span><i class="fa fa-facebook"></i></span>
+                    </div>
+                    <div class="icon twitter">
+                        <div class="tooltip">Twitter</div>
+                        <span><i class="fa fa-twitter"></i></span>
+                    </div>
+                    <div class="icon instagram">
+                        <div class="tooltip">Instagram</div>
+                        <span><i class="fa fa-instagram"></i></span>
+                    </div>
+                    <div class="icon github">
+                        <div class="tooltip">Github</div>
+                        <span><i class="fa fa-github"></i></span>
+                    </div>
+                    <div class="icon youtube">
+                        <div class="tooltip">Youtube</div>
+                        <span><i class="fa fa-youtube"></i></span>
+                    </div>
+                </div> -->
+
+            </div>
+
+            <!-- Contact Form -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-7 mb-5">
+                        <h1 class="page-heading">Get In Touch</h1>
+                        <form action="#" name="myForm" class="contact-form" id="form">
+                            <div id="error"></div>
+                            <div class="row form-group">
+                                <div class="col-md-12 mb-3 mb-md-0">
+                                    <input type="text" id="fullname" name="name" class="form-control"
+                                        placeholder="Full Name">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-md-12">
+                                    <input type="email" id="email" name="email" class="form-control"
+                                        placeholder="Email Address">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-md-12">
+                                    <input type="text" id="subject" name="subject" class="form-control"
+                                        placeholder="Subject">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-md-12">
+                                    <textarea name="message" id="message" name="message" cols="30" rows="5"
+                                        class="form-control" placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 form-group">
+                                    <button id="btn" class="submitBtn" value="submit" type="submit" name="submit"
+                                        onclick="validate()">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Map -->
+    <div class="container-fluid text-center">
+        <div class="row">
+            <iframe width="100px" height="100px" id="gmap_canvas"
+                src="https://maps.google.com/maps?q=%20%20Humber%20College%20North,%20Humber%20College%20Boulevard,%20Etobicoke,%20ON%20Search%20Google%20Maps%20%20Humber%20College%20North,%20Humber%20College%20Boulevard,%20Etobicoke,%20ON%20Search%20Google%20Maps%20%20Humber%20College%20North,%20Humber%20College%20Boulevard,%20Etobicoke,%20ON%20Search%20Google%20Maps&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+            </iframe>
+            <a href="https://123movies-to.org">
+            </a><br>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid text-center  bg-grey">
+        <a href="#myPage" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <p> Humber College Blvd., Toronto, Ontario, Canada M9W 5L7</p>
+        <p> &copy; 2022 All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

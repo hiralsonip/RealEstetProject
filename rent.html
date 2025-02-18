@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/new.css">
+    <link rel="icon" href="images/icon.png">
+    <title>Rent Well</title>
+</head>
+
+<body id="myPage" data-target=".navbar" data-offset="60">
+
+    <!-- Nav menu bar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="new.html">RENT WELL</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="rent.html">RENT</a></li>
+                    <li><a href="sell.html">SELL</a></li>
+                    <li><a href="aboutUs.html">ABOUT</a></li>
+                    <li><a href="contactUs.html">CONTACT</a></li>
+                    <li><a href="notification.html"><span class="glyphicon glyphicon-bell"></span></a></li>
+                    <li class="dropdown-submenu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">
+                            <span class="glyphicon glyphicon-user nav-label"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="#">Setting</a></li>
+                            <li><a href="#">Log Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main content - wallpaper -->
+    <div class="jumbotron text-center">
+        <h1>Rent Well</h1>
+        <p>EXCELLENT SPACE FOR YOUR NEXT HOME</p>
+    </div>
+
+    <!-- Renting Properties -->
+    <div class="container-fluid text-center">
+        <h2>RENT</h2>
+    </div>
+
+    <!-- Search & Filter Section -->
+    <div class="fixed-search container-fluid bg-grey">
+        <div class="search">
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <form action="">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                </form>
+            </div>
+
+            <!-- Filter section -->
+            <div class="modal-button"><a class="btn btn-primary modal-primary-button" data-toggle="modal"
+                    href='#modal-id'>Filters <span class="glyphicon glyphicon-tasks"></span> </a></div>
+            <div class="modal fade" id="modal-id">
+                <div class="modal-dialog">
+                    <div class="modal-content filter-model">
+                        <div class="modal-header">
+                            <div class="modal-searchbar">
+                                <input type="search" name="" id="input" class="form-control" value="" required=""
+                                    title="" placeholder="City, neighbourhood">
+                            </div>
+                            <div class="modal-close-button">
+                                <button type="button" class="close" data-dismiss="modal"
+                                    aria-hidden="true">&times;</button>
+                            </div>
+                        </div>
+
+                        <div class="modal-body">
+
+                            <!-- Row 1 -->
+                            <div class="row">
+                                <div class="filter-items">
+                                    <div class="filter-item-text">Property Type</div>
+                                    <div class="filter-dropdown">
+                                        <select name="" id="">
+                                            <option value="">Any</option>
+                                            <option value="">Residential</option>
+                                            <option value="">Condo</option>
+                                            <option value="">Town House</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="filter-items">
+                                    <div class="filter-item-text">Transaction Type</div>
+                                    <div class="filter-dropdown">
+                                        <select name="" id="">
+                                            <option value="">For Sale</option>
+                                            <option value="">For Rent</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="filter-items">
+                                    <div class="filter-item-text">Min Price</div>
+                                    <div class="filter-dropdown">
+                                        <!-- <input type="text" name="" id="" class="price-input"> -->
+                                        <select name="" id="">
+                                            <option value="">0</option>
+                                            <option value="">1000</option>
+                                            <option value="">10,000</option>
+                                            <option value="">20,000</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="filter-items">
+                                    <div class="filter-item-text">Max Price</div>
+                                    <div class="filter-dropdown">
+                                        <select name="" id="">
+                                            <option value="">Unlimited</option>
+                                            <option value="">1000</option>
+                                            <option value="">10,000</option>
+                                            <option value="">20,000</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Row 2 -->
+                            <div class="row">
+                                <div class="filter-items">
+                                    <div class="filter-item-text">Beds</div>
+                                    <div class="filter-dropdown">
+                                        <select name="" id="">
+                                            <option value="">Any</option>
+                                            <option value="">1</option>
+                                            <option value="">1+</option>
+                                            <option value="">2</option>
+                                            <option value="">2+</option>
+                                            <option value="">3</option>
+                                            <option value="">3+</option>
+                                            <option value="">4</option>
+                                            <option value="">4+</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="filter-items">
+                                    <div class="filter-item-text">Baths</div>
+                                    <div class="filter-dropdown">
+                                        <select name="" id="">
+                                            <option value="">Any</option>
+                                            <option value="">1</option>
+                                            <option value="">1+</option>
+                                            <option value="">2</option>
+                                            <option value="">2+</option>
+                                            <option value="">3</option>
+                                            <option value="">3+</option>
+                                            <option value="">4</option>
+                                            <option value="">4+</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="filter-items">
+                                    <div class="filter-item-text">Land Size</div>
+                                    <div class="filter-dropdown">
+                                        <select name="" id="">
+                                            <option value="">Any</option>
+                                            <option value="">1+ acre</option>
+                                            <option value="">2+ acre</option>
+                                            <option value="">5+ acre</option>
+                                            <option value="">10+ acre</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="filter-items">
+                                    <div class="filter-item-text">Listed Since</div>
+                                    <div class="filter-dropdown">
+                                        <input type="date" name="" id="" class="listed-since-date">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Row 3 -->
+                            <div class="row">
+                                <div class="filter-items">
+                                    <div class="filter-item-text">Building Type</div>
+                                    <div class="filter-dropdown">
+                                        <select name="" id="">
+                                            <option value="">Any</option>
+                                            <option value="">House</option>
+                                            <option value="">Townhouse</option>
+                                            <option value="">Apartment</option>
+                                            <option value="">Duplex</option>
+                                            <option value="">Triplex</option>
+                                            <option value="">Garden Home</option>
+                                            <option value="">Residential Commercial Mix</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="filter-items">
+                                    <div class="filter-item-text">Building Style</div>
+                                    <div class="filter-dropdown">
+                                        <select name="" id="">
+                                            <option value="">Attached</option>
+                                            <option value="">Detached</option>
+                                            <option value="">Semi-detached</option>
+                                            <option value="">Stacked</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="filter-items">
+                                    <div class="filter-item-text">Storeys</div>
+                                    <div class="filter-dropdown">
+                                        <select name="" id="">
+                                            <option value="">Any</option>
+                                            <option value="">Bunglow(1)</option>
+                                            <option value="">1+</option>
+                                            <option value="">2</option>
+                                            <option value="">2+</option>
+                                            <option value="">3</option>
+                                            <option value="">3+</option>
+                                            <option value="">4</option>
+                                            <option value="">4+</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="filter-items">
+                                    <div class="filter-item-text">Ownership/Title</div>
+                                    <div class="filter-dropdown">
+                                        <select name="" id="">
+                                            <option value="">Freehold</option>
+                                            <option value="">Condo</option>
+                                            <option value="">Timeshare</option>
+                                            <option value="">Leasehold</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="reset" class="btn btn-primary">Reset
+                                <span class="glyphicon glyphicon-circle-arrow-left"></span> </button>
+                            <button type="button" class="btn btn-primary">Search
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sorting option menu -->
+        <div class="sort-list">
+            <div class="sort-text">Sort By</div>
+            <div class="sort-list-option">
+                <select name="" id="sort-list-option">
+                    <option value="">Newest</option>
+                    <option value="">Oldest</option>
+                    <option value="">Highest Price</option>
+                    <option value="">Lowest Price</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Number of properties -->
+        <div class="list-property-number">
+            <div class="list-result">Results: </div>
+            <div class="list-number">187,456 listings</div>
+        </div>
+    </div>
+
+    <div id="portfolio" class="container-fluid bg-grey">
+
+        <!-- Property listings -->
+        <div class="row text-center slideanim">
+            <div class="col-sm-4">
+                <a href="singlepropertyRent.html">
+                    <div class="thumbnail">
+                        <img src="images/home_1.jpg" alt="Paris" width="400" height="300">
+                        <p><strong>$550</strong></p>
+                        <p>33 Seasons Drive, Toronto, Rouge E11</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="singlepropertyRent.html">
+                    <div class="thumbnail">
+                        <img src="images/home_2.jpg" alt="New York" width="400" height="300">
+                        <p><strong>$690</strong></p>
+                        <p>Bsmt - 37 Rossander Court, Toronto, ON•Bendale</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="singlepropertyRent.html">
+                    <div class="thumbnail">
+                        <img src="images/home_3.jpg" alt="San Francisco" width="400" height="300">
+                        <p><strong>$980</strong></p>
+                        <p>178 Maplehurst Avenue, Toronto, ON, Willowdale East</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="singlepropertyRent.html">
+                    <div class="thumbnail">
+                        <img src="images/home_4.jpg" alt="Paris" width="400" height="300">
+                        <p><strong>$550</strong></p>
+                        <p>33 Seasons Drive, Toronto, Rouge E11</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="singlepropertyRent.html">
+                    <div class="thumbnail">
+                        <img src="images/home_5.jpg" alt="New York" width="400" height="300">
+                        <p><strong>$690</strong></p>
+                        <p>Bsmt - 37 Rossander Court, Toronto, ON•Bendale</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="singlepropertyRent.html">
+                    <div class="thumbnail">
+                        <img src="images/home_6.jpg" alt="San Francisco" width="400" height="300">
+                        <p><strong>$980</strong></p>
+                        <p>178 Maplehurst Avenue, Toronto, ON, Willowdale East</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="singlepropertyRent.html">
+                    <div class="thumbnail">
+                        <img src="images/home_7.jpg" alt="Paris" width="400" height="300">
+                        <p><strong>$550</strong></p>
+                        <p>33 Seasons Drive, Toronto, Rouge E11</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="singlepropertyRent.html">
+                    <div class="thumbnail">
+                        <img src="images/home_8.jpg" alt="New York" width="400" height="300">
+                        <p><strong>$690</strong></p>
+                        <p>Bsmt - 37 Rossander Court, Toronto, ON•Bendale</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="singlepropertyRent.html">
+                    <div class="thumbnail">
+                        <img src="images/home_9.jfif" alt="San Francisco" width="400" height="300">
+                        <p><strong>$980</strong></p>
+                        <p>178 Maplehurst Avenue, Toronto, ON, Willowdale East</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="singlepropertyRent.html">
+                    <div class="thumbnail">
+                        <img src="images/home_10.jpg" alt="Paris" width="400" height="300">
+                        <p><strong>$550</strong></p>
+                        <p>33 Seasons Drive, Toronto, Rouge E11</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="singlepropertyRent.html">
+                    <div class="thumbnail">
+                        <img src="images/home_11.jpg" alt="New York" width="400" height="300">
+                        <p><strong>$690</strong></p>
+                        <p>Bsmt - 37 Rossander Court, Toronto, ON•Bendale</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="singlepropertyRent.html">
+                    <div class="thumbnail">
+                        <img src="images/home_12.jpg" alt="San Francisco" width="400" height="300">
+                        <p><strong>$980</strong></p>
+                        <p>178 Maplehurst Avenue, Toronto, ON, Willowdale East</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div><br>
+
+    <!-- Footer -->
+    <footer class="container-fluid text-center  bg-grey">
+        <a href="#myPage" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <p> Humber College Blvd., Toronto, Ontario, Canada M9W 5L7</p>
+        <p> &copy; 2022 All Rights Reserved.</p>
+    </footer>
+
+    <!-- <script>
+        var elementPosition = $('.search').offset();
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > elementPosition.top) {
+                $('.search').css('position', 'fixed').css('top', '100px');
+            } else {
+                $('.search').css('position', 'static');
+            }
+        });
+    </script> -->
+
+</body>
+
+</html>

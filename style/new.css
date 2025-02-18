@@ -1,0 +1,1877 @@
+@font-face {
+    font-family: 'Lato';
+    src: url(../fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+}
+
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+#portfolio {
+    margin-bottom: 30px;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: grey;
+    z-index: 9999;
+    border: 0;
+    font-size: 14px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+.navbar li a,
+.navbar .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover,
+.navbar-nav li a:focus,
+.navbar-nav li.active a {
+    color: gray !important;
+    background-color: #fff !important;
+}
+
+.navbar-nav li ul li {
+    padding: 5px;
+}
+
+.dropdown-menu li a {
+    color: gray !important;
+}
+
+.dropdown-menu li a:hover {
+    font-weight: bolder;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+.jumbotron {
+    background-image: url('../images/wallpaper.jpg');
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+    /* opacity: 70%; */
+    color: unset;
+}
+
+.jumbotron text-center p {
+    font-weight: bolder;
+}
+
+.jumbotron h1 {
+    font-weight: bolder;
+}
+
+.jumbotron p {
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: bolder;
+}
+
+.container-fluid {
+    padding: 60px 50px;
+}
+
+.bg-grey {
+    background-color: #f6f6f6;
+}
+
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+
+.thumbnail img {
+    width: 509px;
+    height: 338px;
+    margin-bottom: 10px;
+}
+
+/* .mapouter {
+    padding-top: 30px;
+    padding-bottom: 30px;
+} */
+
+/* Contact us page - map */
+iframe#gmap_canvas {
+    height: 500px;
+    width: 500px;
+}
+
+#contact {
+    text-align: center;
+}
+
+
+/* #info {
+    padding-top: 50px;
+} */
+
+a:focus,
+a:hover {
+    color: #23527c;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.logo-small {
+    color: #303030;
+    font-size: 50px;
+}
+
+.logo {
+    color: #303030;
+    font-size: 200px;
+}
+
+/* About Us Page Style */
+img.img-fluid {
+    /* padding: 50px 500px 50px 0px; */
+    padding: 3% 25% 3% 0;
+    margin-top: 2%;
+    float: right;
+    height: 350px;
+}
+
+#about {
+    display: inline-block;
+    width: 100%;
+}
+
+.about-image {
+    display: inline-block;
+    float: right;
+    width: 50%;
+}
+
+.about-text {
+    display: inline-block;
+    width: 50%;
+}
+
+p.about {
+    /* padding: 50px 0px 50px 500px; */
+    padding: 9% 3% 6% 40%;
+    font-size: large;
+    text-align: center;
+}
+
+/* Contact Page Style */
+h1.page-heading {
+    text-align: center;
+}
+
+/* iframe {
+    margin-right: 15%;
+    margin-left: 20%;
+    width: 250px;
+    height: 250px;
+} */
+
+.submitBtn {
+    display: block;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #e7e7e7;
+    color: black;
+}
+
+#btn:focus {
+    background-color: #303030;
+    color: #e7e7e7;
+    outline: none;
+}
+
+#btn:hover {
+    background-color: #303030;
+    color: #e7e7e7;
+    outline: none;
+}
+
+/* profile page style */
+#profile-pic {
+    border-radius: 2000px;
+    height: 120px;
+    width: 120px;
+}
+
+#myBtn {
+    border: none;
+    padding: 15px 32px;
+    font-size: 16px;
+    margin-top: 30px;
+    cursor: pointer;
+    background-color: rgb(177, 174, 174);
+    color: black;
+    border-radius: 10px;
+}
+
+#myBtn:focus,
+#myBtn:hover {
+    background-color: #303030;
+    color: #e7e7e7;
+    outline: none;
+}
+
+/* Modal Profile Page */
+.modal {
+    overflow: scroll;
+    display: none;
+    position: fixed;
+    padding-top: 30px;
+    left: 0;
+    top: 0;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid #888;
+    width: 90%;
+    height: 100%;
+}
+
+.modal-header {
+    margin: auto;
+}
+
+.modal-header h2 {
+    text-transform: none;
+    float: left;
+    color: #333435;
+}
+
+.modal-backdrop {
+    position: static;
+}
+
+.profile {
+    text-align: left;
+}
+
+input[type=text],
+[type=email],
+select {
+    width: 100%;
+    padding: 6px;
+    margin: 2px;
+}
+
+#profilePage {
+    padding: 25px;
+}
+
+.close {
+    color: black;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#saveBtn {
+    margin-right: 37%;
+    padding: 3%;
+}
+
+#cancel {
+    border-radius: 1000px;
+    font-size: large;
+    margin-top: 1px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: burlywood;
+    color: white;
+}
+
+#cancel:hover {
+    background-color: rgb(180, 147, 102);
+    color: white;
+    outline: none;
+}
+
+#save {
+    border: none;
+    padding: 10px 30px;
+    font-size: 18px;
+    margin-top: 1px;
+    cursor: pointer;
+    border-radius: 100px;
+    background-color: #888;
+    color: #fff;
+}
+
+#save:hover {
+    background-color: rgb(88, 85, 85);
+    color: white;
+    outline: none;
+}
+
+/* Notification Page Style */
+.box {
+    margin-left: 35%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 30%;
+    height: 300px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.137);
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6em 1em;
+    border-bottom: 1px solid black;
+}
+
+.header p {
+    font-size: 20px;
+}
+
+.notification-content {
+    width: 100%;
+}
+
+.notification {
+    width: 500px;
+    padding: 0.6em 1em;
+    display: flex;
+    align-self: center;
+    margin: 10px;
+}
+
+#people-pic-1,
+#people-pic-2 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    margin-right: 0.5em;
+}
+
+.notification .text p {
+    font-size: 15px;
+}
+
+.notification .text p span {
+    font-weight: 700;
+}
+
+.time {
+    font-size: 1em;
+    color: black;
+}
+
+#notification-img {
+    float: right;
+}
+
+.search input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    width: 70em;
+}
+
+.search .search-container button {
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.search .search-container button:hover {
+    background: #ccc;
+}
+
+.search-container {
+    display: inline-block;
+}
+
+.search {
+    overflow: hidden;
+    padding: 14px 16px;
+    margin-bottom: 25px;
+    background-color: #c0c0c0;
+}
+
+.list-number {
+    display: inline-block;
+    padding: 5px;
+}
+
+.list-property-number {
+    display: block;
+    margin-bottom: 25px;
+    font-size: large;
+}
+
+.list-result {
+    display: inline-block;
+}
+
+.sort-list {
+    display: inline-block;
+    font-size: large;
+}
+
+.sort-text,
+.sort-list-option {
+    display: inline-block;
+}
+
+.sort-text {
+    margin-right: 5px;
+}
+
+#sort-list-option {
+    width: 10em;
+}
+
+.modal-button {
+    display: inline-block;
+    float: right;
+}
+
+.modal-primary-button {
+
+    height: max-content;
+    background-color: floralwhite;
+    color: black;
+    border: none;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    height: 40px;
+    font-size: medium;
+}
+
+.modal-primary-button:hover,
+.modal-primary-button:focus,
+.modal-primary-button:active {
+    color: #fff;
+    background-color: darkslategray;
+}
+
+.modal-dialog {
+    display: block;
+    width: 1260px;
+}
+
+.row {
+    width: 100%;
+    padding: 10px;
+}
+
+.filter-items {
+    display: inline-block;
+    width: 24%;
+    padding: 10px;
+}
+
+.filter-dropdown .listed-since-date {
+    width: 100%;
+    height: 34px;
+}
+
+.modal-footer {
+    margin-right: 40%;
+    border: none;
+}
+
+.modal-footer button {
+    background-color: #808080;
+    width: 100px;
+    border: none;
+    height: 50px;
+    font-size: medium;
+}
+
+.modal-footer button:hover {
+    background-color: darkslategrey;
+    color: #fff;
+}
+
+.modal-header .modal-searchbar,
+.modal-header .modal-close-button {
+    display: inline-block;
+}
+
+.modal-header .modal-searchbar input {
+    width: 1000px;
+    height: 55px;
+}
+
+.modal-header .modal-close-button {
+    float: right;
+}
+
+.fixed-search.container-fluid {
+    position: sticky;
+    top: 48px;
+    z-index: 100;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* Image gallery style */
+.mySlides {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.mySlides {
+    width: 65%;
+    margin: auto;
+}
+
+.image-gallery-single {
+    width: 100%;
+    height: 450px;
+}
+
+a.prev {
+    position: absolute;
+    top: 300px;
+    font-size: 50px;
+}
+
+a.next {
+    position: absolute;
+    top: 300px;
+    font-size: 50px;
+    right: 16.2%;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row-image-gallery:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column-image-gallery {
+    float: left;
+    width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+    width: 100%;
+    height: 130px;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+ol.breadcrumb {
+    margin-top: 5%;
+}
+
+.shadow-box {
+    box-shadow: rgba(0, 0, 0, 35%) 0px 1px 4px;
+    margin: 25px;
+}
+
+.shadow-box h2 {
+    text-transform: none;
+}
+
+.property-location {
+    font-weight: bold;
+}
+
+.property-posted-time {
+    color: #333435;
+}
+
+.property-price {
+    color: green;
+    font-weight: bolder;
+    display: inline-block;
+    float: right;
+}
+
+.property-price h3 {
+    font-weight: 600;
+}
+
+.property-details {
+    display: block;
+}
+
+.property-location-div {
+    display: inline-block;
+}
+
+.property-text {
+    display: block;
+}
+
+.property-overview {
+    display: inline-block;
+    box-shadow: rgba(0, 0, 0, 35%) 0px 1px 4px;
+    margin: 25px 0px 25px 25px;
+    /* height: 300px; */
+    /* background-color: red; */
+    width: 47%;
+    padding: 20px;
+}
+
+.property-unit {
+    display: inline-block;
+    box-shadow: rgba(0, 0, 0, 35%) 0px 1px 4px;
+    margin: 25px 25px 25px 0px;
+    /* height: 300px; */
+    /* background-color: blue; */
+    width: 47%;
+    float: right;
+    padding: 20px;
+}
+
+.property-description {
+    /* height: 300px; */
+    box-shadow: rgba(0, 0, 0, 35%) 0px 1px 4px;
+    margin: 25px;
+    padding: 20px;
+}
+
+.owner-info {
+    margin: 25px;
+    box-shadow: rgba(0, 0, 0, 35%) 0px 1px 4px;
+}
+
+.owner-info button {
+    width: 100%;
+    height: 50px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.owner-info button:active,
+.owner-info button:focus,
+.owner-info button:focus-visible {
+    /* border: none; */
+    outline: none;
+}
+
+.property-overview .heading {
+    font-size: large;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+
+.property-overview .subheading {
+    font-weight: bold;
+}
+
+.property-overview .subhead-row {
+    margin-bottom: 15px;
+}
+
+.property-unit .heading {
+    font-size: large;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+
+.property-unit .subheading {
+    font-weight: bold;
+}
+
+.property-unit .subhead-row {
+    margin-bottom: 15px;
+}
+
+.property-description .heading {
+    font-size: large;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+
+#more {
+    display: none;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.wrapper {
+    display: inline-flex;
+}
+
+.wrapper .icon {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    /* width: 50px; */
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background-color: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+    background-color: #3b5999;
+    color: #ffffff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+    background-color: #46c1f6;
+    color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+    background-color: #e1306c;
+    color: #ffffff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+    background-color: #de463b;
+    color: #ffffff;
+}
+
+
+
+/* -------------- RESPONSIVE DESIGN -------------- */
+
+@media only screen and (max-width: 360px) {
+
+    body {
+        font-size: small;
+    }
+
+    /* Main menu - dropdown sub menu */
+    .dropdown-menu li a {
+        color: white !important;
+    }
+
+    /* Single Property page */
+    .property-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .property-unit,
+    .property-overview {
+        width: auto;
+        margin: 25px;
+    }
+
+    /* Rent and sell pages */
+    .property-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .property-unit,
+    .property-overview {
+        width: auto;
+        margin: 25px;
+    }
+
+    .search input[type=text] {
+        width: 8em;
+        font-size: 10px;
+    }
+
+    .search .search-container button {
+        font-size: 10px;
+    }
+
+    #sort-list-option {
+        width: 6em;
+    }
+
+    .sort-list {
+        display: inline-block;
+        font-size: small;
+        margin-left: -35px;
+    }
+
+    .list-property-number {
+        display: inline-block;
+        font-size: small;
+        float: right;
+        margin-right: -35px;
+    }
+
+    .list-property-number {
+        margin-bottom: 0%;
+    }
+
+    .search {
+        overflow: hidden;
+        padding: 5px 5px;
+        margin-bottom: 5px;
+    }
+
+    .search-container {
+        display: inline-block;
+        width: 69%;
+    }
+
+    .modal-primary-button {
+        width: 60px;
+        height: 25px;
+        font-size: 10px;
+    }
+
+    .modal-button {
+        display: inline-block;
+        float: right;
+        margin-top: 4px;
+    }
+
+    /* About us image */
+    img.img-fluid {
+        padding: 0%;
+        height: 350px;
+        width: 100%;
+    }
+
+    #about {
+        display: block;
+        width: 100%;
+    }
+
+    .about-image {
+        display: block;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    .about-text {
+        margin-top: 50px;
+        display: block;
+        width: 100%;
+    }
+
+    p.about {
+        padding: 0%;
+        font-size: large;
+        text-align: center;
+    }
+
+    /* Contact Us Page */
+    iframe {
+        width: 200px;
+        height: 200px;
+        margin: 0px;
+        padding: 0%;
+    }
+
+    /* iframe#gmap_canvas {
+        height: 50px;
+        width: auto;
+    } */
+
+    #facebook,
+    #twitter,
+    #instagram,
+    #github,
+    #youtube {
+        margin: 0px;
+        padding: 0%;
+    }
+    
+
+    #contactForm h1 {
+        font-size: 20px;
+    }
+
+    #fullnameC,
+    #emailC,
+    #subject,
+    #message {
+        /* padding: 20%; */
+        width: 150%;
+    }
+
+    #message {
+        height: 80px;
+    }
+
+    /* Notification Page */
+    .box {
+        margin: 1px;
+        width: 110%;
+        height: 250px;
+        overflow: hidden;
+        border: 1px solid rgba(0, 0, 0, 0.137);
+    }
+    
+    .header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0.6em 1em;
+        border-bottom: 1px solid black;
+    }
+    
+    .header p {
+        font-size: 15px;
+        font-weight: 600;
+        margin-top: 6%;
+    }
+    
+    #readAll{
+        margin-top: 8%;
+        font-size: 11px;
+    }
+
+    .notification-content {
+        width: 100%;
+    }
+    
+    .notification {
+        width: 100%;
+        padding: 0.6em 1em;
+        display: flex;
+        align-self: center;
+        margin: 10px;
+    }
+
+    #people-pic-1,
+    #people-pic-2 {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .notification .text p {
+        font-size: 11px;
+    }
+    
+    /* Profile Page */
+    h3#prof_email {
+        font-size: medium;
+    }
+
+    /* Profile Page Modal */
+    .modal {
+        /* width: 100%; */
+    }
+
+    .modal-content {
+        width: 100%;
+    }
+
+    #saveBtn {
+        margin-right: 74%;
+        padding: 3%;
+    }
+
+    input[type=text],
+    [type=email],
+    select {
+        width: 90%;
+        padding: 6px;
+        margin: 2px;
+    }
+
+    #state {
+        width: 90%;
+    }
+
+    input#city {
+        display: block;
+    }
+
+    /* Filter model on rent and sell page */
+    .modal-dialog {
+        width: 100%;
+    }
+
+    .filter-model {
+        width: 60%;
+    }
+
+    .modal-header .modal-searchbar input {
+        width: 100%;
+        height: 55px;
+    }
+
+    .filter-items {
+        display: flex;
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    select {
+        width: 100%;
+    }
+
+    .modal-footer button {
+        margin: 5px;
+    }
+
+    .modal-footer {
+        text-align: center;
+    }
+
+    .modal-footer {
+        margin-right: 0%;
+    }
+}
+
+/* Mobile screen size */
+@media only screen and (min-width:360px) and (max-width: 380px) {
+
+    /* Main menu - dropdown sub menu */
+    .dropdown-menu li a {
+        color: white !important;
+    }
+
+    /* Single Property page */
+    .property-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .property-unit,
+    .property-overview {
+        width: auto;
+        margin: 25px;
+    }
+
+    /* Rent and sell pages */
+    .search input[type=text] {
+        width: 12em;
+        font-size: 10px;
+    }
+
+    .search .search-container button {
+        font-size: 10px;
+    }
+
+    #sort-list-option {
+        width: 6em;
+    }
+
+    .sort-list {
+        display: inline-block;
+        font-size: small;
+        margin-left: -20px;
+    }
+
+    .list-property-number {
+        display: inline-block;
+        font-size: small;
+        float: right;
+    }
+
+    .list-property-number {
+        margin-bottom: 0%;
+    }
+
+    .search {
+        overflow: hidden;
+        padding: 5px 5px;
+        margin-bottom: 5px;
+    }
+
+    .search-container {
+        display: inline-block;
+        width: 70%;
+    }
+
+    .modal-primary-button {
+        width: 60px;
+        height: 25px;
+        font-size: 10px;
+    }
+
+    .modal-button {
+        display: inline-block;
+        float: right;
+        margin-top: 4px;
+    }
+
+    /* About us image */
+
+    img.img-fluid {
+        padding: 0%;
+        height: 350px;
+        width: 100%;
+    }
+
+    #about {
+        display: block;
+        width: 100%;
+    }
+
+    .about-image {
+        display: block;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    .about-text {
+        margin-top: 50px;
+        display: block;
+        width: 100%;
+    }
+
+    p.about {
+        padding: 0%;
+        font-size: large;
+        text-align: center;
+    }
+
+    input[type=text],
+    [type=email] {
+        padding: 6px;
+        margin: 2px;
+    }
+
+    /* Contact Us Page */
+    /* #contactForm{
+        margin-left: 15%;
+    } */
+    iframe {
+        padding: 0%;
+        margin: 0%;
+        height: 200px;
+        width: 200px;
+    }
+
+    #fullnameC,
+    #emailC,
+    #subject,
+    #message {
+        /* padding: 20%; */
+        width: 150%;
+    }
+
+    /* Filter model on rent and sell page */
+    .modal-dialog {
+        width: 100%;
+    }
+
+    .filter-model {
+        width: 60%;
+    }
+
+    .modal-header .modal-searchbar input {
+        width: 100%;
+        height: 55px;
+    }
+
+    .filter-items {
+        display: flex;
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    select {
+        width: 100%;
+    }
+
+    .modal-footer button {
+        margin: 5px;
+    }
+
+    .modal-footer {
+        text-align: center;
+    }
+
+    .modal-footer {
+        margin-right: 0%;
+    }
+
+    /* Notification Page */
+    .box {
+        margin: 1px;
+        width: 110%;
+        height: 250px;
+        overflow: hidden;
+        border: 1px solid rgba(0, 0, 0, 0.137);
+    }
+    
+    .header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0.6em 1em;
+        border-bottom: 1px solid black;
+    }
+    
+    .header p {
+        font-size: 15px;
+        font-weight: 600;
+        margin-top: 6%;
+    }
+    
+    #readAll{
+        margin-top: 8%;
+        font-size: 11px;
+    }
+
+    .notification-content {
+        width: 100%;
+    }
+    
+    .notification {
+        width: 100%;
+        padding: 0.6em 1em;
+        display: flex;
+        align-self: center;
+        margin: 10px;
+    }
+
+    #people-pic-1,
+    #people-pic-2 {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .notification .text p {
+        font-size: 11px;
+    }
+
+}
+
+/* Big screen size */
+@media only screen and (min-width:380px) and (max-width: 780px) {
+
+    /* Main menu - dropdown sub menu */
+    .dropdown-menu li a {
+        color: gray !important;
+    }
+
+    li.dropdown-submenu.open {
+        background-color: white;
+    }
+
+    /* Single Property page */
+    .property-text {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .property-unit,
+    .property-overview {
+        width: auto;
+        margin: 25px;
+    }
+
+    .property-unit,
+    .property-overview {
+        width: 100;
+    }
+
+    /* About us image */
+    img.img-fluid {
+        padding: 0%;
+        height: 350px;
+        width: 100%;
+    }
+
+    #about {
+        display: block;
+        width: 100%;
+    }
+
+    .about-image {
+        display: block;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    .about-text {
+        margin-top: 50px;
+        display: block;
+        width: 100%;
+    }
+
+    p.about {
+        padding: 0%;
+        font-size: large;
+        text-align: center;
+    }
+
+    /* Single property page */
+    a.next {
+        right: 2.2%;
+    }
+
+    /* Rent and sell page */
+    .search input[type=text] {
+        padding: 6px;
+        margin-top: 8px;
+        /* font-size: 17px; */
+        border: none;
+        width: 60%;
+        background-color: #000;
+    }
+
+    .search-container {
+        display: inline-block;
+        width: 75%;
+    }
+
+    .list-property-number {
+        display: inline-block;
+        margin-bottom: 0px;
+        font-size: small;
+        float: right;
+    }
+
+    .modal-primary-button {
+        width: 65px;
+        font-size: small;
+    }
+
+    .sort-list {
+        display: inline-block;
+        font-size: small;
+    }
+
+    .search {
+        overflow: hidden;
+        padding: 10px 10px;
+        margin-bottom: 3px;
+        background-color: #c0c0c0;
+    }
+
+    #sort-list-option {
+        width: 6em;
+    }
+
+    div#contactForm {
+        display: flex;
+    }
+
+    /* Filter model on rent and sell page */
+    .modal-dialog {
+        width: 100%;
+    }
+
+    .filter-model {
+        width: 60%;
+    }
+
+    .modal-header .modal-searchbar input {
+        width: 100%;
+        height: 55px;
+    }
+
+    .filter-items {
+        display: flex;
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    select {
+        width: 100%;
+    }
+
+    .modal-footer button {
+        margin: 5px;
+    }
+
+    .modal-footer {
+        text-align: center;
+    }
+
+    .modal-footer {
+        margin-right: 0%;
+    }
+
+    /* Contact us page */
+    iframe {
+        padding: 0%;
+        margin: 0%;
+        height: 250px;
+        width: 250px;
+    }
+
+    /* Notification Page */
+    .box {
+        margin: 1px;
+        width: 100%;
+        height: 275px;
+        overflow: hidden;
+        border: 1px solid rgba(0, 0, 0, 0.137);
+    }
+    
+    .header p {
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 6%;
+    }
+    
+    #readAll{
+        margin-top: 8%;
+        font-size: 12px;
+    }
+
+    .notification-content {
+        width: 100%;
+    }
+
+    .notification {
+        width: 100%;
+        padding: 0.6em 1em;
+        display: flex;
+        align-self: center;
+        margin: 10px;
+    }
+    
+    #people-pic-1,
+    #people-pic-2 {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .notification .text p {
+        font-size: 12px;
+    }
+}
+
+/* Tablet size */
+@media only screen and (min-width:780px) and (max-width: 992px) {
+
+    /* Rent and sell pages */
+    .property-unit,
+    .property-overview {
+        width: 43%;
+    }
+
+    .search input[type=text] {
+        padding: 6px;
+        margin-top: 8px;
+        /* font-size: 17px; */
+        border: none;
+        width: 30em;
+        background-color: #000;
+    }
+
+    .list-property-number {
+        display: inline-block;
+        margin-bottom: 0px;
+        font-size: medium;
+        float: right;
+    }
+
+    .sort-list {
+        display: inline-block;
+        font-size: medium;
+    }
+
+    .search {
+        overflow: hidden;
+        padding: 10px 10px;
+        margin-bottom: 3px;
+        background-color: #c0c0c0;
+    }
+
+    .modal-primary-button {
+        width: 75px;
+        font-size: small;
+    }
+
+    /* About us image */
+    img.img-fluid {
+        padding: 0%;
+        height: 350px;
+        width: 100%;
+    }
+
+    #about {
+        display: block;
+        width: 100%;
+    }
+
+    .about-image {
+        display: block;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    .about-text {
+        margin-top: 50px;
+        display: block;
+        width: 100%;
+    }
+
+    p.about {
+        padding: 0%;
+        font-size: large;
+        text-align: center;
+    }
+
+    div#contactForm {
+        display: inline-block;
+        width: 50%;
+    }
+
+    div#info {
+        display: inline-block;
+    }
+
+    /* Filter model on rent and sell page */
+    .modal-dialog {
+        width: 100%;
+    }
+
+    .filter-model {
+        width: 80%;
+    }
+
+    .modal-header .modal-searchbar input {
+        width: 100%;
+        height: 55px;
+    }
+
+    .filter-items {
+        display: inline-block;
+        width: 24%;
+        padding: 10px;
+    }
+
+    select {
+        width: 100%;
+    }
+
+    .modal-footer button {
+        margin: 5px;
+    }
+
+    .modal-footer {
+        text-align: center;
+    }
+
+    .modal-footer {
+        margin-right: 0%;
+    }
+
+    .modal-searchbar {
+        width: 90%;
+    }
+    /* Notification Page */
+    .box {
+        margin: auto;
+        width: 45%;
+        height: 275px;
+        overflow: hidden;
+        border: 1px solid rgba(0, 0, 0, 0.137);
+    }
+    
+    .header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0.6em 1em;
+        border-bottom: 1px solid black;
+    }
+    
+    .header p {
+        font-size: 17px;
+        font-weight: 600;
+        margin-top: 6%;
+    }
+    
+    #readAll{
+        margin-top: 8%;
+        font-size: 13px;
+    }
+
+    .notification-content {
+        width: 100%;
+    }
+    
+    #people-pic-1,
+    #people-pic-2 {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .notification .text p {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width:992px) and (max-width: 1485px) {
+
+    /* Rent and Sell page */
+    .search input[type=text] {
+        padding: 6px;
+        margin-top: 8px;
+        /* font-size: 17px; */
+        border: none;
+        width: 30em;
+        background-color: #000;
+    }
+
+    .sort-list {
+        display: inline-block;
+        font-size: medium;
+    }
+
+    .list-property-number {
+        display: inline-block;
+        margin-bottom: 0px;
+        font-size: medium;
+        float: right;
+    }
+
+    .search {
+        overflow: hidden;
+        padding: 10px 10px;
+        margin-bottom: 3px;
+        background-color: #c0c0c0;
+    }
+
+    /* About us page */
+    img.img-fluid {
+        padding: 3%;
+        width: 100%;
+    }
+
+    .about-image {
+        margin-right: -30px;
+    }
+
+    .about-text {
+        margin-left: -30px;
+    }
+
+    p.about {
+        padding: 3%;
+    }
+
+    div#contactForm {
+        display: inline-block;
+        width: 50%;
+    }
+
+    div#info {
+        display: inline-block;
+    }
+
+    /* Filter model on rent and sell page */
+    .modal-dialog {
+        width: 100%;
+    }
+
+    .filter-model {
+        width: 80%;
+    }
+
+    .modal-header .modal-searchbar input {
+        width: 100%;
+        height: 55px;
+    }
+
+    .filter-items {
+        display: inline-block;
+        width: 24%;
+        padding: 10px;
+    }
+
+    select {
+        width: 100%;
+    }
+
+    .modal-footer button {
+        margin: 5px;
+    }
+
+    .modal-footer {
+        text-align: center;
+    }
+
+    .modal-footer {
+        margin-right: 0%;
+    }
+
+    .modal-searchbar {
+        width: 90%;
+    }
+    /* Notification Page */
+    .box {
+        margin: auto;
+        width: 45%;
+        height: 275px;
+        overflow: hidden;
+        border: 1px solid rgba(0, 0, 0, 0.137);
+    }
+    
+    .header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0.6em 1em;
+        border-bottom: 1px solid black;
+    }
+    
+    .header p {
+        font-size: 17px;
+        font-weight: 600;
+        margin-top: 6%;
+    }
+    
+    #readAll{
+        margin-top: 8%;
+        font-size: 13px;
+    }
+
+    .notification-content {
+        width: 100%;
+    }
+    
+    #people-pic-1,
+    #people-pic-2 {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .notification .text p {
+        font-size: 14px;
+    }
+}
