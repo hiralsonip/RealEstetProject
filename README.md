@@ -17,3 +17,10 @@ This website is designed for individuals seeking accommodation in a specific cit
 - **JavaScript** – Interactive elements and functionality.
 - **Bootstrap** – Responsive design and styling.
 - **Custom Fonts** – Lato and Montserrat for enhanced typography.
+
+## Screen Shot
+Here is the Home page of the website  
+
+https://github.com/user-attachments/assets/df2e1f32-2520-4d18-baeb-ca11229f030e
+
+
